@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codecompany.macrov.codeinmind" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ui.loginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".ui.introActivity"
+            android:label="@string/title_activity_intro" >
+        </activity>
+        <activity
+            android:name=".ui.paperActivity"
+            android:label="@string/title_activity_paper" >
+        </activity>
+        <activity
+            android:name=".ui.selectActivity"
+            android:label="@string/title_activity_select" >
+        </activity>
+        <activity
+            android:name=".ui.detailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+        <activity
+            android:name=".ui.progressActivity"
+            android:label="@string/title_activity_progress" >
+        </activity>
+        <activity
+            android:name=".ui.codeSettingActivity"
+            android:label="@string/title_activity_code_setting" >
+        </activity>
+        <activity
+            android:name=".ui.signupActivity"
+            android:label="@string/title_activity_signup" >
+        </activity>
+    </application>
+
+</manifest>
