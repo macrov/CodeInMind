@@ -39,6 +39,14 @@
             android:name=".ui.signupActivity"
             android:label="@string/title_activity_signup" >
         </activity>
+        <activity
+            android:name=".ui.welcomeActivity"
+            android:label="@string/title_activity_welcome" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

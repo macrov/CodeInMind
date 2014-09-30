@@ -12,5 +12,6 @@
     <string name="title_activity_progress">progressActivity</string>
     <string name="title_activity_code_setting">codeSettingActivity</string>
     <string name="title_activity_signup">signupActivity</string>
+    <string name="title_activity_welcome">welcomeActivity</string>
 
 </resources>

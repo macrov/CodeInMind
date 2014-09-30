@@ -7,18 +7,25 @@ public class Code {
 
     public String codeName;
 
-    public Code(){
+
+    public Code(String name, CodeRecorder recorder){
+
+        codeName = name;
+        codeRecorder = recorder;
+
+
 
     }
 
     public Node getNextNode(){
-
+        return codeRecorder.getUnMemorizedNodes().remove(0);
     }
 
     public boolean saveResult(Node node,String answer){
-
+        return true;
     }
 
-
+    private CodeProvider codeProvider;
+    private CodeRecorder codeRecorder;
 
 }
