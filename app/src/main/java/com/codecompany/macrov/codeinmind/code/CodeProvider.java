@@ -3,16 +3,14 @@ package com.codecompany.macrov.codeinmind.code;
 import android.content.Context;
 import android.content.res.XmlResourceParser;
 import android.os.Environment;
+import android.util.Log;
+
+import com.codecompany.macrov.codeinmind.R;
+
+import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.File;
 import java.io.IOException;
-
-import android.util.Log;
-
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-
-import com.codecompany.macrov.codeinmind.R;
 /**
  * Created by 28852028 on 9/24/2014.
  */

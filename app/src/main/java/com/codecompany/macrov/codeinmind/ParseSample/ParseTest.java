@@ -23,7 +23,8 @@ public class ParseTest {
         Parse.initialize(context,"ADAJl79Q7fQP5aq4WFQO1WFVZLgF001JjK0yvuSn", "AAEP8nHwnNc3XPB1XupvJASHdyXpBhyMQO34cWGJ");
     }
 
-    public boolean createParseObject(){
+    //create a sample ParseObject on Parse.com
+    public void createParseObject(){
         ParseObject ob = new ParseObject("TestObject");
         ob.put("Name","TestObject");
         ob.saveInBackground(new SaveCallback() {
@@ -36,6 +37,8 @@ public class ParseTest {
         });
     }
 
+
+    //get a file from Parse.com
     public void getCodeXml(){
         ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("Codes");
         query.whereEqualTo("codeName","code");
@@ -44,12 +47,12 @@ public class ParseTest {
             public void done(ParseObject parseObject, ParseException e) {
                 if( e == null ){
                     ParseFile xmlFile = parseObject.getParseFile("code");
-                    if( xmlFile ){
+                    if( xmlFile != null ){
                         xmlFile.getDataInBackground(new GetDataCallback() {
                             @Override
                             public void done(byte[] bytes, ParseException e) {
                                 if( e == null ){
-                                    String xml = new String(bytes, null);
+                                    String xml = new String(bytes);
                                     Log.d("ParseTest", xml);
                                 } else {
                                     e.printStackTrace();
@@ -62,6 +65,5 @@ public class ParseTest {
                 }
             }
         });
-
     }
 }

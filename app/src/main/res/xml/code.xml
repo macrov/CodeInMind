@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<code>
+    <name>Android基础</name>
+    <version>1.0</version>
+    <node>
+        <id>1</id>
+        <subject>如何设置线性布局的方向为‘纵向’？</subject>
+        <answer correct="Y">
+            android:orientation="vertical"
+        </answer>
+        <answer>
+            android:orientation="horizontal" 
+        </answer>
+        <answer>
+            android:direction="vertical"
+        </answer>
+        <answer>
+            android:direction="horizontal"
+        </answer>
+    </node>
+    <node>
+        <id>2</id>
+        <subject>Controls whether links such as urls and email addresses are automatically found and converted to clickable links.</subject>
+        <answer correct="Y">
+            android:autoLink
+        </answer>
+        <answer>
+            android:bufferType
+        </answer>
+        <answer>
+            android:digits
+        </answer>
+    </node>
+    <node>
+        <id>3</id>
+        <subject>Specifies how to align the text by the view's x- and/or y-axis when the text is smaller than the view. </subject>
+        <answer correct="Y">
+            android:gravity
+        </answer>
+        <answer>
+            android:hint
+        </answer>
+        <answer>
+            android:linksClickable
+        </answer>
+    </node>
+    <node>
+        <id>4</id>
+        <subject>Hint text to display when the text is empty. </subject>
+        <answer correct="Y">
+            android:hint
+        </answer>
+        <answer>
+            android:imeActionId
+        </answer>
+        <answer>
+            android:linksClickable
+        </answer>
+    </node>
+</code>

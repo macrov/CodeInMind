@@ -1,12 +1,12 @@
 package com.codecompany.macrov.codeinmind.ui;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.codecompany.macrov.codeinmind.R;
 
-import com.codecompany.macrov.codeinmind.code.CodeProvider;
+import com.codecompany.macrov.codeinmind.ParseSample.ParseTest;
+import com.codecompany.macrov.codeinmind.R;
 
 public class welcomeActivity extends ActionBarActivity {
 
@@ -14,8 +14,12 @@ public class welcomeActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        CodeProvider codeProvider = new CodeProvider(welcomeActivity.this, "code");
-        codeProvider.testResXML();
+//        CodeProvider codeProvider = new CodeProvider(welcomeActivity.this, "code");
+//        codeProvider.testResXML();
+
+        ParseTest pt = new ParseTest(this);
+        pt.createParseObject();
+        pt.getCodeXml();
 
     }
 
